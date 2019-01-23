@@ -1,0 +1,11 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+
+
+body{
+  @include font-text;
+}
+h1{
+  letter-spacing: 40px;
+}
