@@ -1,10 +1,26 @@
 @font-face {
-	font-family: 'OpenSansRegular';
-	src: url('../fonts/OpenSansRegular.eot');
-	src: local('OpenSansRegular'), url('../fonts/OpenSansRegular.woff') format('woff'), url('../fonts/OpenSansRegular.ttf') format('truetype');
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Light.woff2?v=1.101) format("woff2"), url(fonts/Light/OpenSans-Light.woff?v=1.101) format("woff");
+  font-weight: 300;
+  font-style: normal
 }
 
-.fontsforweb_fontid_16804 {
-	font-family: 'OpenSansRegular' !important;
+
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Regular.woff2?v=1.101) format("woff2"), url(fonts/Regular/OpenSans-Regular.woff?v=1.101) format("woff");
+  font-weight: 400;
+  font-style: normal
 }
+
+
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Bold.woff2?v=1.101) format("woff2"), url(fonts/Bold/OpenSans-Bold.woff?v=1.101) format("woff");
+  font-weight: 700;
+  font-style: normal
+}
+
 
