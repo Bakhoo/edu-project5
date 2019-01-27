@@ -970,3 +970,6 @@ body {
       .footer .container .payment a {
         text-decoration: none;
         margin-left: 35px; }
+
+.test {
+  outline: 1px solid red; }
