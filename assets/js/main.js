@@ -182,9 +182,9 @@ $(".cart-tab__button").click(function() {
 
 
 /// Calculating
-var count=0;
 // minus
 $('.minus').click(function () {
+    var count = $(this).next().text();
     var price = $(this).parent().prev().find("span").text();
     Number(price);
     count--;
@@ -196,6 +196,7 @@ $('.minus').click(function () {
 });
 // plus
 $('.plus').click(function () {
+  var count = $(this).prev().text();
   var price = $(this).parent().prev().find("span").text();
   Number(price);
   count++;
