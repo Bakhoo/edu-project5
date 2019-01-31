@@ -1,0 +1,64 @@
+/* Preloader */
+
+
+@keyframes spin{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+  .loader-img{
+      animation: spin 1.5s linear .5s infinite;
+  }
+  .loader p{
+    animation: changeColor 1.5s linear .5s infinite;
+  }
+  @keyframes changeColor{
+    from{
+      color:#cacfd6
+    }
+    50%{
+      color:#898C91;
+    }
+    to{
+      color: #cacfd6;
+    }
+  }
+
+/* tabcontent */
+@keyframes tab{
+  from{
+    opacity:0;
+    position: relative;
+    transform: scale(1.02);
+    filter: blur(2px);
+  }
+  50%{
+    opacity: .5;
+  }
+  to{
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+.sectionActive{
+  animation: tab .4s linear .2s 1!important;
+}
+.address-form form input:hover{
+  animation: inputColor 1s ease-in-out .8s infinite;
+}
+
+
+@keyframes inputColor{
+  from{
+    border-color: #C2C7D0;
+  }
+  50%{
+    border-color: #8200FF;
+  }
+  to{
+    border-color: #C2C7D0;
+  }
+}

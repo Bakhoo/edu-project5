@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/vendors/font-awesome-4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="assets/css/font.css">
+  <link rel="stylesheet" href="assets/css/preloader.css">
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/prefix-free.js"></script>
+  <title>Cart</title>
+</head>
+
+<body>
+  <!-- top-header -->
+  <div class="container-fluid top-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 lang">
+          <a href="#" rel="language" class="ru langActive">Ru</a>
+          <a href="#" rel="language" class="uz">Uz</a>
+          <p class="location">
+            <a href="#">Выбрать регион</a>
+            <i class="fa fa-map-marker"></i>
+          </p>
+        </div>
+        <div class="col-lg-5 book">
+          <p><a href="#">*Бесплатная доставка для первого заказа</a></p>
+        </div>
+        <div id="up" class="col-lg-3 phone">
+          <p>
+            <a href="#">+338 068 456-40-74</a>
+            <i class="fa fa-phone"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end top-header -->
+  <!-- header-menu -->
+  <div class="container-fluid header-menu header-menu-catal">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 menuForm menuForm-prod">
+          <div class="togNav">
+            <img src="assets/img/toggler.png" alt="">
+          </div>
+          <div class="form">
+            <form action="#">
+              <a href="#"> <img src="assets/img/search.png" alt=""></a>
+              <input id="search" type="search" placeholder="Поиск...">
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-6 signCart signCart-prod">
+          <a href="sign.html"><img src="assets/img/user.png" alt=""></a>
+          <a href="cart.html"><img src="assets/img/cart.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end header-menu -->
+  <!-- Slider -->
+  <div class="container-fluid slider slider-cart">
+    <div class="container">
+      <div class="nav">
+        <ul class="menu">
+          <li class="menu-item">
+            <div class="menu-item__icon icon1"></div>
+            <ul class="menu-item__link">
+              <li class="menu-item__link-li">
+                <a class="item" href="#">Напитки</a>
+                <ul class="menu-item__sub">
+                  <li><a href="#">Напитки газированные</a></li>
+                  <li><a href="#">Соки</a></li>
+                  <li><a href="#">Энергетические напитки</a></li>
+                  <li><a href="#">Алкогольные напитки</a></li>
+                  <li><a href="#">Вода</a></li>
+                  <li><a href="#">Холодный чай кофе</a></li>
+                </ul>
+                <span class="fa fa-chevron-right"></span>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__icon icon2"></div>
+            <ul class="menu-item__link">
+              <li class="menu-item__link-li">
+                <a class="item" href="#">Бакалея</a>
+                <ul class="menu-item__sub">
+                  <li><a href="#">Напитки газированные</a></li>
+                  <li><a href="#">Соки</a></li>
+                  <li><a href="#">Энергетические напитки</a></li>
+                  <li><a href="#">Алкогольные напитки</a></li>
+                  <li><a href="#">Вода</a></li>
+                  <li><a href="#">Холодный чай кофе</a></li>
+                </ul>
+                <span class="fa fa-chevron-right"></span>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__icon icon3"></div>
+            <ul class="menu-item__link">
+              <li class="menu-item__link-li">
+                <a class="item" href="#">Хлеб и выпечка</a>
+                <ul class="menu-item__sub">
+                  <li><a href="#">Напитки газированные</a></li>
+                  <li><a href="#">Соки</a></li>
+                  <li><a href="#">Энергетические напитки</a></li>
+                  <li><a href="#">Алкогольные напитки</a></li>
+                  <li><a href="#">Вода</a></li>
+                  <li><a href="#">Холодный чай кофе</a></li>
+                </ul>
+                <span class="fa fa-chevron-right"></span>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__icon icon4"></div>
+            <ul class="menu-item__link">
+              <li class="menu-item__link-li">
+                <a class="item" href="#">Овощи, фрукты, зелень</a>
+                <ul class="menu-item__sub">
+                  <li><a href="#">Напитки газированные</a></li>
+                  <li><a href="#">Соки</a></li>
+                  <li><a href="#">Энергетические напитки</a></li>
+                  <li><a href="#">Алкогольные напитки</a></li>
+                  <li><a href="#">Вода</a></li>
+                  <li><a href="#">Холодный чай кофе</a></li>
+                </ul>
+                <span class="fa fa-chevron-right"></span>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__icon icon5"></div>
+            <ul class="menu-item__link">
+              <li class="menu-item__link-li">
+                <a class="item" href="#">Молочные продукты</a>
+                <ul class="menu-item__sub">
+                  <li><a href="#">Напитки газированные</a></li>
+                  <li><a href="#">Соки</a></li>
+                  <li><a href="#">Энергетические напитки</a></li>
+                  <li><a href="#">Алкогольные напитки</a></li>
+                  <li><a href="#">Вода</a></li>
+                  <li><a href="#">Холодный чай кофе</a></li>
+                </ul>
+                <span class="fa fa-chevron-right"></span>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__icon icon6"></div>
+            <ul class="menu-item__link">
+              <li class="menu-item__link-li">
+                <a class="item" href="#">Полуфабрикаты</a>
+                <ul class="menu-item__sub">
+                  <li><a href="#">Напитки газированные</a></li>
+                  <li><a href="#">Соки</a></li>
+                  <li><a href="#">Энергетические напитки</a></li>
+                  <li><a href="#">Алкогольные напитки</a></li>
+                  <li><a href="#">Вода</a></li>
+                  <li><a href="#">Холодный чай кофе</a></li>
+                </ul>
+                <span class="fa fa-chevron-right"></span>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__icon icon7"></div>
+            <ul class="menu-item__link">
+              <li class="menu-item__link-li">
+                <a class="item" href="#">Мясные продукты</a>
+                <ul class="menu-item__sub">
+                  <li><a href="#">Напитки газированные</a></li>
+                  <li><a href="#">Соки</a></li>
+                  <li><a href="#">Энергетические напитки</a></li>
+                  <li><a href="#">Алкогольные напитки</a></li>
+                  <li><a href="#">Вода</a></li>
+                  <li><a href="#">Холодный чай кофе</a></li>
+                </ul>
+                <span class="fa fa-chevron-right"></span>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__icon icon8"></div>
+            <ul class="menu-item__link">
+              <li class="menu-item__link-li">
+                <a class="item" href="#">Рыбная гастрономия</a>
+                <ul class="menu-item__sub">
+                  <li><a href="#">Напитки газированные</a></li>
+                  <li><a href="#">Соки</a></li>
+                  <li><a href="#">Энергетические напитки</a></li>
+                  <li><a href="#">Алкогольные напитки</a></li>
+                  <li><a href="#">Вода</a></li>
+                  <li><a href="#">Холодный чай кофе</a></li>
+                </ul>
+                <span class="fa fa-chevron-right"></span>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__icon icon9"></div>
+            <ul class="menu-item__link">
+              <li class="menu-item__link-li">
+                <a class="item" href="#">Приправы и соусы</a>
+                <ul class="menu-item__sub">
+                  <li><a href="#">Напитки газированные</a></li>
+                  <li><a href="#">Соки</a></li>
+                  <li><a href="#">Энергетические напитки</a></li>
+                  <li><a href="#">Алкогольные напитки</a></li>
+                  <li><a href="#">Вода</a></li>
+                  <li><a href="#">Холодный чай кофе</a></li>
+                </ul>
+                <span class="fa fa-chevron-right"></span>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__icon icon10"></div>
+            <ul class="menu-item__link">
+              <li class="menu-item__link-li">
+                <a class="item" href="#">Соленья</a>
+                <ul class="menu-item__sub">
+                  <li><a href="#">Напитки газированные</a></li>
+                  <li><a href="#">Соки</a></li>
+                  <li><a href="#">Энергетические напитки</a></li>
+                  <li><a href="#">Алкогольные напитки</a></li>
+                  <li><a href="#">Вода</a></li>
+                  <li><a href="#">Холодный чай кофе</a></li>
+                </ul>
+                <span class="fa fa-chevron-right"></span>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__icon icon11"></div>
+            <ul class="menu-item__link">
+              <li class="menu-item__link-li">
+                <a class="item" href="#">Кондитерские изделия</a>
+                <ul class="menu-item__sub">
+                  <li><a href="#">Напитки газированные</a></li>
+                  <li><a href="#">Соки</a></li>
+                  <li><a href="#">Энергетические напитки</a></li>
+                  <li><a href="#">Алкогольные напитки</a></li>
+                  <li><a href="#">Вода</a></li>
+                  <li><a href="#">Холодный чай кофе</a></li>
+                </ul>
+                <span class="fa fa-chevron-right"></span>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__icon icon12"></div>
+            <ul class="menu-item__link">
+              <li class="menu-item__link-li">
+                <a class="item" href="#">Бумажные изделия</a>
+                <ul class="menu-item__sub">
+                  <li><a href="#">Напитки газированные</a></li>
+                  <li><a href="#">Соки</a></li>
+                  <li><a href="#">Энергетические напитки</a></li>
+                  <li><a href="#">Алкогольные напитки</a></li>
+                  <li><a href="#">Вода</a></li>
+                  <li><a href="#">Холодный чай кофе</a></li>
+                </ul>
+                <span class="fa fa-chevron-right"></span>
+              </li>
+            </ul>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="cart-tab">
+        <span class="cart-tab__button cIcon">Корзина</span>
+        <span class="cart-tab__button cIcon1">Адрес</span>
+        <span class="cart-tab__button cIcon2">Оформить заказ</span>
+        <span class="cart-tab__button cIcon3">Готово</span>
+      </div>
+      <!-- first cart section -->
+      <div class="cart-section first">
+        <div class="cart-section__title">
+          <h1>В вашей корзине ( <span class="numberCart">4</span> )</h1>
+          <a href="#">Добавить еще ТОвар</a>
+        </div>
+        <div class="cart-section__main">
+          <ul class="prod-ul">
+            <li>
+              <div class="pName">
+                <img src="assets/img/pr11.png" alt="">
+                <div class="pName-text">
+                  <h4>Ultra Towel</h4>
+                  <h1>Ультра бумажные салфетки</h1>
+                </div>
+              </div>
+              <div class="pNumber">
+                <h4>Количество 12 штук</h4>
+                <h1><span>10000</span> сум</h1>
+              </div>
+              <div class="pCount">
+                <span class="minus fa fa-minus"></span>
+                <p> 0 </p>
+                <span class="plus fa fa-plus"></span>
+              </div>
+              <div class="pReset">
+                <p><span>0</span> сум</p>
+                <span class="reset fa fa-close (alias)"></span>
+              </div>
+            </li>
+            <li>
+              <div class="pName">
+                <img src="assets/img/pr11.png" alt="">
+                <div class="pName-text">
+                  <h4>Ultra Towel</h4>
+                  <h1>Ультра бумажные салфетки</h1>
+                </div>
+              </div>
+              <div class="pNumber">
+                <h4>Количество 12 штук</h4>
+                <h1><span>10000</span> сум</h1>
+              </div>
+              <div class="pCount">
+                <span class="minus fa fa-minus"></span>
+                <p> 0 </p>
+                <span class="plus fa fa-plus"></span>
+              </div>
+              <div class="pReset">
+                <p><span>0</span> сум</p>
+                <span class="reset fa fa-close (alias)"></span>
+              </div>
+            </li>
+            <li>
+              <div class="pName">
+                <img src="assets/img/pr11.png" alt="">
+                <div class="pName-text">
+                  <h4>Ultra Towel</h4>
+                  <h1>Ультра бумажные салфетки</h1>
+                </div>
+              </div>
+              <div class="pNumber">
+                <h4>Количество 12 штук</h4>
+                <h1><span>10000</span> сум</h1>
+              </div>
+              <div class="pCount">
+                <span class="minus fa fa-minus"></span>
+                <p> 0 </p>
+                <span class="plus fa fa-plus"></span>
+              </div>
+              <div class="pReset">
+                <p><span>0</span> сум</p>
+                <span class="reset fa fa-close (alias)"></span>
+              </div>
+            </li>
+            <li>
+              <div class="pName">
+                <img src="assets/img/pr11.png" alt="">
+                <div class="pName-text">
+                  <h4>Ultra Towel</h4>
+                  <h1>Ультра бумажные салфетки</h1>
+                </div>
+              </div>
+              <div class="pNumber">
+                <h4>Количество 12 штук</h4>
+                <h1><span>10000</span> сум</h1>
+              </div>
+              <div class="pCount">
+                <span class="minus fa fa-minus"></span>
+                <p> 0 </p>
+                <span class="plus fa fa-plus"></span>
+              </div>
+              <div class="pReset">
+                <p><span>0</span> сум</p>
+                <span class="reset fa fa-close (alias)"></span>
+              </div>
+            </li>
+          </ul>
+          <div class="results">
+            <ul class="results-list">
+              <li>Розничная цена <span>440 000 сум</span></li>
+              <li>С нами вы экономите<span>40 000 сум</span></li>
+              <li>Расчетный налог*<span>0,00</span></li>
+              <li> Стоимость доставки<span>10%</span></li>
+          </ul>
+          <div class="results-result">
+              <h1>Общий итог:<span>400 000 сум</span></h1>
+              <div class="resultLoader">
+                <p>бесплатная доставка на сумму больше 20 000 сум </p>
+                <div class="line">
+                  <div class="full"></div>
+                  <div class="delivery"></div>
+                </div>
+              </div>
+          </div>
+          </div>
+          <div class="finish">
+            <p><span class="fa fa-angle-left"></span>Вернуться назад </p>
+            <a href="#"><span class="fa fa-angle-right"></span>Продолжить</a>
+          </div>
+        </div>
+      </div>
+      <!-- second location section -->
+      <div class="cart-section second">
+        <div class="cart-section__title">
+          <h1>Выбрать адрес доставки</h1>
+          <a href="#">Добавить новый адрес</a>
+        </div>
+        <div class="cart-section__main">
+            <ul class="sec-ul">
+              <li>
+                <div class="secName">
+                  <h4>Имя Фамилия-Получателя</h4>
+                  <h1>Адресная строка, название улицы, дома, квартиры</h1>
+              </div>
+              <div class="telNumber">
+                  <span>+998902345770</span>
+              </div>
+              <div class="match">
+                <span class="fa fa-check"></span>
+              </div>
+              </li>
+              <li>
+                <div class="secName">
+                  <h4>Имя Фамилия-Получателя</h4>
+                  <h1>Адресная строка, название улицы, дома, квартиры</h1>
+              </div>
+              <div class="telNumber">
+                  <span>+998902345770</span>
+              </div>
+              <div class="match">
+                <span class="fa fa-check"></span>
+              </div>
+              </li>
+              <li>
+                <div class="secName">
+                  <h4>Имя Фамилия-Получателя</h4>
+                  <h1>Адресная строка, название улицы, дома, квартиры</h1>
+              </div>
+              <div class="telNumber">
+                  <span>+998902345770</span>
+              </div>
+              <div class="match">
+                <span class="fa fa-check"></span>
+              </div>
+              </li>
+            </ul>
+          <div class="finish">
+              <p><span class="fa fa-angle-left"></span>Вернуться назад </p>
+            <a href="#"><span class="fa fa-angle-right"></span>Продолжить</a>
+          </div>
+        </div>
+      </div>
+      <!-- third payment section -->
+      <div class="cart-section third">
+        <div class="cart-section__title">
+          <h1>Выбрать способ оплаты</h1>
+        </div>
+        <!-- fourth finish section -->
+        <div class="cart-section__main">
+            <div class="payMethod">
+                  <div class="method">
+                        <div class="img">
+                          <img src="assets/img/pM1.png" alt="">
+                        </div>
+                        <span class="fa fa-circle"></span>
+                  </div>
+                  <div class="method">
+                      <div class="img">
+                        <img src="assets/img/pM2.png" alt="">
+                      </div>
+                      <span class="fa fa-circle"></span>
+                </div>
+                <div class="method">
+                    <div class="img">
+                      <img src="assets/img/pM3.png" alt="">
+                    </div>
+                    <span class="fa fa-circle"></span>
+              </div>
+              <div class="method">
+                  <div class="img">
+                    <img src="assets/img/pM4.png" alt="">
+                  </div>
+                  <span class="fa fa-circle"></span>
+            </div>
+            </div>
+          <h5>Наличные деньги</h5>
+          <p>
+            Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например,
+            юмористические вставки или слова,
+            которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы
+            наверняка не
+            хотите какой-нибудь шутки,
+            скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же
+            текст,
+            который они просто повторяют,
+            пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum
+            генератором.
+          </p>
+          <p>
+            Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате
+            сгенерированный Lorem Ipsum выглядит
+            правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.
+          </p>
+          <div class="finish">
+              <p><span class="fa fa-angle-left"></span>Вернуться назад </p>
+            <a href="#"><span class="fa fa-angle-right"></span>Продолжить</a>
+          </div>
+        </div>
+      </div>
+      <!-- fourth section -->
+      <div class="cart-section">
+        <div class="cart-section__title">
+          <h1>Спасибо за покупку!</h1>
+          <a href="#">Добавить новый адрес</a>
+        </div>
+        <div class="cart-section__main">
+          <p>
+            Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например,
+            юмористические вставки или слова,
+            которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы
+            наверняка не
+            хотите какой-нибудь шутки,
+            скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же
+            текст,
+            который они просто повторяют,
+            пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum
+            генератором.
+          </p>
+          <p>
+            Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате
+            сгенерированный Lorem Ipsum выглядит
+            правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.
+          </p>
+          <div class="finish">
+              <p><span class="fa fa-angle-left"></span>Вернуться назад </p>
+            <a href="#"><span class="fa fa-angle-right"></span>Завершить</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- end slider  -->
+  <!-- pre-footer -->
+  <div class="container-fluid pre-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 info">
+          <span class="fIcon1"></span>
+          <ul>
+            <li><a href="#">Как это работает</a></li>
+            <li><a href="catalog.html">Каталог товаров</a></li>
+            <li><a href="catalog.html">Оплата и доставка</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 info">
+          <span class="fIcon2"></span>
+          <ul>
+            <li><a href="#">Обратная связь</a></li>
+            <li><a href="catalog.html">Пользовательское соглашение</a></li>
+            <li><a href="catalog.html">Поддежрка и F.A.Q</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 social">
+          <h1>Мы в социальных сетях:</h1>
+          <div class="facebook">
+            <a class="faceB" href="#">
+              <span class="fa fa-facebook-square"></span>
+              Like
+            </a>
+            <a class="faceB" href="#">Share</a>
+            <p>66,220 people like this</p>
+          </div>
+          <div class="otherSocial">
+            <a href="#">
+              <span class="fa fa-pinterest"></span>
+              Follow on Pinterest
+            </a>
+            <a href="#">
+              <span class="fa fa-twitter"></span>
+              Follow on Twitter
+            </a>
+          </div>
+          <div class="up">
+            <a class="up-text" href="#up">Наверх</a>
+            <a class="up-img" href="#up"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="container-fluid footer">
+    <div class="container">
+      <div class="olimp olimp-catal">
+        <h1><a href="#">Olimp.<span>uz</span></a></h1>
+        <p>© 2019 Интернет-магазин. Все права защищены</p>
+      </div>
+      <div class="payment">
+        <a href="#"> <img class="payImg1" src="assets/img/uzcard.png" alt=""></a>
+        <a href="#"> <img class="payImg2" src="assets/img/visa.png" alt=""></a>
+        <a href="#"> <img class="payImg3" src="assets/img/click.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
