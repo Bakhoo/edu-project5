@@ -1049,52 +1049,56 @@ body{
       margin: 0;
     }
     .secNav{
+      position: relative;
       a{
         border: 0;
       }
       &-item{
-        position: relative;
-        width: 300px;
-        padding:5px 0px;
-        border-radius: 20px;
-        border:1px solid #C2C7D0;
+        @media only screen and (min-width:576px){
+          right: 100%;
+        }
+        position: absolute;
+        width: 240px;
         display: flex;
         transition: all .3s linear;
         align-items: center;
-        padding-right: 15px;
+        flex-wrap: wrap;
         .fa{
           font-size: 14px;
           color: #8200FF;
-        transition: all .3s linear;
+          transition: all .3s linear;
+          position: absolute;
+          right: 15px;
+          top: 12px;
         }
         &:hover .fa{
           color: #F5F5F5;
         transition: all .3s linear;
         }
-        &:hover{
-          background-color: #8200FF;
-          transition: all .3s linear;
-        }
         &:hover .secNav-item__link{
           color: #F5F5F5;
         }
+        &:hover{
+          .secNav-item__link{
+            background-color: #8200FF;
+            transition: all .3s linear;
+          }
+        }
         &__link{
+          flex-basis: 100%;
           font-size: 16px;
           color: #0b0b0b;
-          padding-left: 15px;
-          flex: 1 1 0;
+          padding:5px 0px 5px 20px;
+          border-radius: 20px;
+          border:1px solid #C2C7D0!important;
           text-decoration: none;
+          margin-bottom:10px;
         }
         .secNavActive{
           display: block!important;
         }
-        .fix{
-          position: absolute;
-          top: 36px;
-          padding-top: 12px;
-        }
         .secNav-sub{
-         display: none;
+        display: none;
           width: 300px;
           border: 1px solid #C2C7D0;
           background-color: #EBEBEB;
